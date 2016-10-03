@@ -119,6 +119,12 @@
 	    comment: "Pew pew pew lightsabers space cowboys whoot what's not to love",
 	    rating: 100,
 	    author: "Val"
+	  });  
+	
+	  var review3 = new Review({
+	    comment: "An exciting romp through space with some colourful characters.",
+	    rating: 100,
+	    author: "Simon"
 	  });
 	
 	  var film1 = new Film({
@@ -135,6 +141,7 @@
 	
 	  film1.addReview(review1);
 	  film2.addReview(review2);
+	  film2.addReview(review3);
 	
 	  return [film1, film2];
 	}
