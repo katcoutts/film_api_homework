@@ -33,7 +33,9 @@ var FilmApi = function(app){
     res.json({data: films});
   });
 
-  app.post('/api/films/new', function(req,res){
+
+// create
+  app.post('/api/films', function(req,res){
     var newFilm = (req.body.film);
     films.push(newFilm);
     res.json({data: films});
